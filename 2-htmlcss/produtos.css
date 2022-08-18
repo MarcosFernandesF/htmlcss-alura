@@ -30,3 +30,36 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /* 30% + 30% + 30% + 9% == 99% de largura utilizada*/
+    padding: 30px 20px;
+    box-sizing: border-box; /* Antes era 99% de largura + os pixels do padding, depois do border-box o pixel está incluso na porcentagem */ 
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Primeiro parágrafo da lista */
+.produto-descricao {
+    font-size: 18px;
+}
+
+/* Segundo parágrafo da lista */
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
