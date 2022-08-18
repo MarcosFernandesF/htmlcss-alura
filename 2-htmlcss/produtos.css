@@ -31,10 +31,27 @@ nav a {
     text-decoration: none;
 }
 
+/* Hover é uma Pseudo-Classe / Passar o mouse por cima do elemento */
+/* Pseudo-classe é uma palavra adicionada a seletores que especifica um estado especial do elemento selecionado */
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+}
+
+/* Ao passar o mouse por cima */
+.produtos li:hover {
+    border-color: #C78C19
+}
+
+/* Ao clicar com o mouse */
+.produtos li:active {
+    border-color: #088C19;
 }
 
 .produtos li {
@@ -47,6 +64,11 @@ nav a {
     box-sizing: border-box; /* Antes era 99% de largura + os pixels do padding, depois do border-box o pixel está incluso na porcentagem */ 
     border: 2px solid #000000;
     border-radius: 10px;
+}
+
+/* Quando o mouse passar por cima do item => alteramos o h2 */
+.produtos li:hover h2 {
+    font-size: 34px;
 }
 
 .produtos h2 {
