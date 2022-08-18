@@ -109,15 +109,22 @@ form {
     margin: 40px 0px;
 }
 
-form label {
+form label, form p {
     display: block;
     font-size: 20px;
     margin: 0 0 10px; /* topo; horizontal; inferior */
 }
 
-form input {
+.input-padrao {
     display: block;
     margin: 0 0 20px; /* topo; horizontal; inferior */
     padding: 10px 25px;
     width: 50%;
 }
+
+.checkbox {
+    margin: 20px 0;
+}
+
+/* Hierarquia no CSS: Id (100), Classe (10), Seletor (1); Ex: form p {} = 1 + 1, mais for que somente p {} = 1*/ 
+/* inline-style é mais forte que os demais */
