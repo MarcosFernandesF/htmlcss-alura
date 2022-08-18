@@ -45,6 +45,8 @@ nav a {
     margin: 0 1.5%; /* 30% + 30% + 30% + 9% == 99% de largura utilizada*/
     padding: 30px 20px;
     box-sizing: border-box; /* Antes era 99% de largura + os pixels do padding, depois do border-box o pixel está incluso na porcentagem */ 
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
 .produtos h2 {
