@@ -1,5 +1,20 @@
 header {
     background: #BBBBBB;
+    padding: 20px;
+}
+
+.caixa {
+    /* Utilizando o "relative", o absolute do nav vai ser em relação ao container .caixa*/
+    position: relative;
+    width: 940px; /* 940px é um tamanho frequentemente utilizado */
+    margin: 0 auto;
+}
+
+nav {
+    /* "absolute" consegue posicionar o elemento em relação a qualquer lugar da página*/
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
 nav li {
