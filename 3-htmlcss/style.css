@@ -148,6 +148,21 @@ form label, form legend {
     background: darkorange;
     /* Aumenta todos os elementos dentro do botão proporcionalmente em 20% com o "transform: scale(1.2)" */
     /*transform: scale(1.2);*/
-    /* Roda o botão em tantos graus */ 
-    transform: rotate(360deg) scale(1.2);
+    /* Roda o botão em tantos graus com "rotate(xdeg)"*/ 
+    transform: /*rotate(360deg)*/ scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
