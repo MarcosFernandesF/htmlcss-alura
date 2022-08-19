@@ -1,0 +1,168 @@
+header {
+    background: #BBBBBB;
+    padding: 20px;
+}
+
+.caixa {
+    /* Utilizando o "relative", o absolute do nav vai ser em relação ao container .caixa*/
+    position: relative;
+    width: 940px; /* 940px é um tamanho frequentemente utilizado */
+    margin: 0 auto;
+}
+
+nav {
+    /* "absolute" consegue posicionar o elemento em relação a qualquer lugar da página*/
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /* Espaçamento para a esquerda de 15 px */
+}
+
+nav a {
+    /* Transforma o texto em maiúsculo */
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Hover é uma Pseudo-Classe / Passar o mouse por cima do elemento */
+/* Pseudo-classe é uma palavra adicionada a seletores que especifica um estado especial do elemento selecionado */
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* Ao passar o mouse por cima */
+.produtos li:hover {
+    border-color: #C78C19
+}
+
+/* Ao clicar com o mouse */
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; /* 30% + 30% + 30% + 9% == 99% de largura utilizada*/
+    padding: 30px 20px;
+    box-sizing: border-box; /* Antes era 99% de largura + os pixels do padding, depois do border-box o pixel está incluso na porcentagem */ 
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+/* Quando o mouse passar por cima do item => alteramos o h2 */
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Primeiro parágrafo da lista */
+.produto-descricao {
+    font-size: 18px;
+}
+
+/* Segundo parágrafo da lista */
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px; /* topo; horizontal; inferior */
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px; /* topo; horizontal; inferior */
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+/* Hierarquia no CSS: Id (100), Classe (10), Seletor (1); Ex: form p {} = 1 + 1, mais for que somente p {} = 1*/ 
+/* inline-style é mais forte que os demais */
+
+.enviar {
+    width: 40%;
+    padding: 15px 0px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    /* "transition:" deixa a transição de cor mais suave*/
+    transition: 1s all;
+    /* Transforma o mouse na mãozinha */
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    /* Aumenta todos os elementos dentro do botão proporcionalmente em 20% com o "transform: scale(1.2)" */
+    /*transform: scale(1.2);*/
+    /* Roda o botão em tantos graus com "rotate(xdeg)"*/ 
+    transform: /*rotate(360deg)*/ scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
