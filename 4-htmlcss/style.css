@@ -166,3 +166,40 @@ td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+
+/* CSS da página inicial */
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /* Duas vezes o tamanho base */
+    margin: 0 0 1em; /* Espaçamento inferior de 1em (que na verdade é 2em = 30px)*/
+    /* Clear limpa o float*/
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    /* float: é como se o elemento descolasse da tela mas ainda deixasse sua sombra 
+    sem que nenhum outro elemento possa ocupar, dessa forma eles contornam a imagem*/
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.img-beneficios {
+    width: 60%;
+}
