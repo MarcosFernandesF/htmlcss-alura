@@ -128,3 +128,26 @@ form label, form legend {
 
 /* Hierarquia no CSS: Id (100), Classe (10), Seletor (1); Ex: form p {} = 1 + 1, mais for que somente p {} = 1*/ 
 /* inline-style é mais forte que os demais */
+
+.enviar {
+    width: 40%;
+    padding: 15px 0px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    /* "transition:" deixa a transição de cor mais suave*/
+    transition: 1s all;
+    /* Transforma o mouse na mãozinha */
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    /* Aumenta todos os elementos dentro do botão proporcionalmente em 20% com o "transform: scale(1.2)" */
+    /*transform: scale(1.2);*/
+    /* Roda o botão em tantos graus */ 
+    transform: rotate(360deg) scale(1.2);
+}
