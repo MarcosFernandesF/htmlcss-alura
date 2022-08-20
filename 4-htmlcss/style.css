@@ -178,6 +178,8 @@ td, th {
     margin: 0 0 1em; /* Espaçamento inferior de 1em (que na verdade é 2em = 30px)*/
     /* Clear limpa o float*/
     clear: left;
+    /* Sombra no texto
+    text-shadow: 2px 2px #FF0000;*/
 }
 
 /* Estiliza a primeira letra do texto
@@ -245,6 +247,8 @@ p:first-line {
 .beneficios {
     padding: 3em 0;
     background: #888888;
+    /* Sombra interna "inset"
+    box-shadow: inset 0 0 30px #FF0000;*/
 }
 
 .conteudo-beneficios {
@@ -275,8 +279,16 @@ p:first-line {
 
 .img-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    /* box-shadow: X Y Espalhamento Intensidade da Borda Color*/
+    box-shadow: 10px 10px 10px 0px #000000;
 }
 
+.img-beneficios:hover {
+    /* Opacidade */
+    opacity: 0.3;
+}
 
 .video {
     width: 560px;
