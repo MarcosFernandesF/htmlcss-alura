@@ -316,3 +316,23 @@ img ~ p {
 }*/
 
 /* Propriedade calc:(% - px), calcula o tamanho do elemento na tela*/
+
+
+/* Pergunta ao navegador qual o tamanho da tela, se for até 480px vou usar o estilo escolhido */ 
+@media screen and  (max-width: 480px) {
+    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video{
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .img-beneficios {
+        width: 100%;
+    }
+}
