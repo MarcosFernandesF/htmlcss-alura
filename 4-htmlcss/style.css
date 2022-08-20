@@ -32,7 +32,7 @@ nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 21px;
     text-decoration: none;
 }
 
@@ -97,6 +97,7 @@ footer {
     text-align: center;
     background: url("imagens/bg.jpg");
     padding: 40px 0;
+    clear: left;
 }
 
 .copyright {
@@ -106,7 +107,8 @@ footer {
 }
 
 form {
-    margin: 40px 0px;
+    width: 640px;
+    margin: 40px auto;
 }
 
 form label, form legend {
@@ -153,7 +155,8 @@ form label, form legend {
 }
 
 table {
-    margin: 20px 0 40px;
+    margin: 20px auto 40px;
+    float: left;
 }
 
 thead {
@@ -165,6 +168,11 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+.tabela {
+    width: 640px;
+    margin: 0 auto;
 }
 
 /* CSS da página inicial */
@@ -317,10 +325,9 @@ img ~ p {
 
 /* Propriedade calc:(% - px), calcula o tamanho do elemento na tela*/
 
-
 /* Pergunta ao navegador qual o tamanho da tela, se for até 480px vou usar o estilo escolhido */ 
 @media screen and  (max-width: 480px) {
-    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video{
+    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video, .produtos{
         width: auto;
     }
 
@@ -334,5 +341,18 @@ img ~ p {
 
     .lista-beneficios, .img-beneficios {
         width: 100%;
+    }
+
+    .produtos li {
+        display: block;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    form, table {
+        margin-left: 20px;
+    }
+    .checkbox{
+        width: 70%; 
     }
 }
