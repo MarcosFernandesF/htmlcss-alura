@@ -1,0 +1,21 @@
+body {
+    background-color: #1D232A;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+/* Flex-Container, com o display:flex todos os elementos descendentes
+do container podem ser remanejados comjustify-content e align-items */
+.cabecalho{
+    /* Permite que os elementos fiquem alinhados horizontamente todos um ao lado do outro */
+    display: flex;
+    /* justify-content permite redistribuir melhor o espaço entre e ao redor dos elementos */
+    /* space-between deixa um espaço igual entre os elementos*/
+    justify-content: space-between;
+    /* align-items redistribui o espaço dos elementos no eixo vertical*/
+    /* por padrão vem "stretch", o "center" deixa ele ocupando somento o espaço do conteudo no centro da altura*/
+    align-items: center;
+    background-color: #15191C;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
