@@ -1,21 +1,124 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 body {
     background-color: #1D232A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif;
     color: #FFFFFF;
 }
 
 /* Flex-Container, com o display:flex todos os elementos descendentes
-do container podem ser remanejados comjustify-content e align-items */
+do container podem ser remanejados com justify-content e align-items */
 .cabecalho{
     /* Permite que os elementos fiquem alinhados horizontamente todos um ao lado do outro */
     display: flex;
-    /* justify-content permite redistribuir melhor o espaço entre e ao redor dos elementos */
+
+    /* justify-content pega todo espaçamento lateral e redistribui entre os elementos */
     /* space-between deixa um espaço igual entre os elementos*/
     justify-content: space-between;
+    
     /* align-items redistribui o espaço dos elementos no eixo vertical*/
     /* por padrão vem "stretch", o "center" deixa ele ocupando somento o espaço do conteudo no centro da altura*/
     align-items: center;
     background-color: #15191C;
     padding: 8px 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalho__logo {
+    width: 40px;
+}
+
+.cabecalho__notificacao i::before{
+    content: "\e906";
+    font-size: 24px;
+}
+
+.menu-lateral {
+    display: flex;
+
+    /* flex-wrap: wrap; Permite a quebra de linha dos elementos */
+
+    /* "column" deixa os elementos um embaixo do outro */
+    /* Depois disso ele muda o eixo do justify-content e align-items*/
+    flex-direction: column;
+
+    background-color: #15191C;
+    width: 75vw; /* Largura de viewport */
+    height: 100vh; /* Altura de viewport */
+
+    position: absolute;
+    left: -100vh;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-lateral__logo {
+    /* Seria a mesma coisa que align-items, mas aplica só para um elemento e não para o container inteiro */
+    align-self: center;
+
+    width: 118px;
+    padding: 16px;
+    
+}
+
+.menu-lateral__link {
+    height: 64px;
+    color: #95999C;
+    padding-left: 64px;
+
+    /* Transformando os links em um flex-container */
+    display: flex;
+
+    align-items: center;
+}
+
+.menu-lateral__link--ativo {
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
+.menu-lateral__link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.menu-lateral__link--inicio::before {
+    content: "\e902";
+}
+
+.menu-lateral__link--videos::before {
+    content: "\e90e";
+}
+
+.menu-lateral__link--picos::before {
+    content: "\e909";
+}
+
+.menu-lateral__link--integrantes::before {
+    content: "\e903";
+}
+
+.menu-lateral__link--camisas::before {
+    content: "\e900";
+}
+
+.menu-lateral__link--pinturas::before {
+    content: "\e90a";
 }
