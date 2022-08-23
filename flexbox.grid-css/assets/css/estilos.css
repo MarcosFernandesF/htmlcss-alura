@@ -125,10 +125,17 @@ do container podem ser remanejados com justify-content e align-items */
 
 .principal {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina {
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -142,6 +149,10 @@ do container podem ser remanejados com justify-content e align-items */
     background-color: #2C343A;
 }
 
+.cartao--destaque {
+    margin-bottom: 16px;
+}
+
 .cartao__conteudo {
     padding: 16px;
 
@@ -149,7 +160,12 @@ do container podem ser remanejados com justify-content e align-items */
     display: grid;
 
     /* Numero de colunas e o seu tamanho*/
-    grid-template-columns: 1fr 1fr;
+    /* Vai ampliar o tamanho da caixa conforme o conteudo com "auto" */
+    grid-template-columns: auto 1fr;
+
+    /* Propriedade do grid que da um espaçamento entre linhas e colunas */
+    /* Pode ser usado também row-gap e column-gap */
+    gap: 8px;
 
 }
 
@@ -200,6 +216,7 @@ do container podem ser remanejados com justify-content e align-items */
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -217,3 +234,12 @@ do container podem ser remanejados com justify-content e align-items */
 .cartao__botao--destaque::before {
     margin-right: 8px;
 }
+
+.secao {
+    display: grid;
+    gap: 16px;
+}
+
+
+
+
