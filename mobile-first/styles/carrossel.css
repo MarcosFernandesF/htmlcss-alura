@@ -5,7 +5,7 @@
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
-    padding: 1em 0 0.5em 0;
+    padding: 0.5em 0 0.5em 0;
 }
 
 .swiper-pagination {
@@ -72,7 +72,7 @@
 @media screen and (min-width: 1024px) {
     .carrossel__titulo {
         font-size: 26px;
-        padding: 2em 00 0.5em 0;
+        padding: 1em 0 0.5em 0;
     }
 
     .swiper {
@@ -91,5 +91,42 @@
     .card {
         width: 40%;
         margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper-slide {
+        margin: 0
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+
+    .descricao {
+        margin-right: 1em;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3em;
     }
 }

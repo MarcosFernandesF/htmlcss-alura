@@ -22,7 +22,6 @@ hr {
     
     .lista-rodape {
         display: block;
-        padding: 1em;
     }
 
     .lista-rodape__titulo {
@@ -44,5 +43,16 @@ hr {
 
     .rodape__titulo {
         font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-rodape {
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
+    }
+
+    .rodape {
+        padding: 3em 0;
     }
 }

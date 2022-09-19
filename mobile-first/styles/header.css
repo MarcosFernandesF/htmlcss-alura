@@ -15,6 +15,14 @@
     display: inline-block;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img/MenuAberto.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -68,6 +76,12 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
+
+
 /* Versão Tablet */
 @media screen and (min-width: 1024px) {
     .container__titulo, .container__titulo--negrito {
@@ -119,5 +133,46 @@
         width: auto;
     }
 
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
 
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        /* Anteriormente foi usado fill color transparente para desaparecer a fonte e aparecer so o background, agora teve que ser modificado*/
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+}
+
+/* Versão Desktop */
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        padding: 0 2em;
+    }
+    
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .opcoes {
+        margin-left: 2em;
+        margin-right: auto;
+    }
 }
