@@ -1,0 +1,15 @@
+@import url("header.css");
+
+:root {
+    --cor-de-fundo: #FFFFFF;
+    --cinza: #667085;
+    --fonte-principal: "Inter";
+    --vermelho: #8E2424;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+}
