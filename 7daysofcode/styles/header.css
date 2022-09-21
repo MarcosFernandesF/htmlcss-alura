@@ -7,24 +7,23 @@
 
 .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo__texto {
     font-size: 18px;
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
 }
 
 .navegacao {
     display: flex;
-    margin-left: 6em;
+    margin-left: 5em;
     margin-right: auto;
 }
 
 .navegacao-link {
     text-decoration: none;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 .navegacao-texto {
@@ -51,5 +50,3 @@
     color: var(--cor-de-fundo);
     border-radius: 8px;
 }
-
-/* Teste */
