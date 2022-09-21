@@ -1,11 +1,14 @@
 @import url("header.css");
 @import url("sobre-nos.css");
+@import url("estatisticas.css");
+@import url("talentos.css");
 
 :root {
     --cor-de-fundo: #FFFFFF;
     --cinza: #667085;
     --fonte-principal: "Inter";
     --vermelho: #8E2424;
+    --vermelho-opaco: #8E242410;
 }
 
 body {
@@ -13,5 +16,5 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 25px;
 }

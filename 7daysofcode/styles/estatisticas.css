@@ -1,0 +1,25 @@
+.estatisticas {
+    display: flex;
+    margin: 4em 8em;
+}
+
+.estatistica__cartao {
+    width: 20vw;
+    padding: 2rem;
+}
+
+.estatistica__dado {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--vermelho);
+}
+
+.estatistica__titulo {
+    font-size: 18px;
+    margin: 2rem 0 1rem 0;
+}
+
+.estatistica__texto {
+    font-weight: 400;
+    color: var(--cinza);
+}
