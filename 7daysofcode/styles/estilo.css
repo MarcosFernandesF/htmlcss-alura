@@ -2,10 +2,12 @@
 @import url("sobre-nos.css");
 @import url("estatisticas.css");
 @import url("talentos.css");
+@import url("vagas.css");
 
 :root {
     --cor-de-fundo: #FFFFFF;
     --cinza: #667085;
+    --cinza-borda: #EAECF0;
     --fonte-principal: "Inter";
     --vermelho: #8E2424;
     --vermelho-opaco: #8E242410;

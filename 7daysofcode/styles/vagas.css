@@ -1,0 +1,33 @@
+.vagas {
+    margin: 0 23vw;
+}
+
+.vagas__titulo {
+    font-size: 20px;
+    margin-left: 1.8rem;
+}
+
+.lista-vagas {
+    margin-bottom: 4rem;
+}
+
+.lista-item {
+    border: 1px solid var(--cinza-borda);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.item__titulo {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.container__texto {
+    color: var(--cinza);
+    margin-right: 1rem;
+}
