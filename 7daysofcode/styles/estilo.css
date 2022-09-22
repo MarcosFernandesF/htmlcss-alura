@@ -3,11 +3,14 @@
 @import url("estatisticas.css");
 @import url("talentos.css");
 @import url("vagas.css");
+@import url("depoimentos.css");
+@import url("rodape.css");
 
 :root {
     --cor-de-fundo: #FFFFFF;
     --cinza: #667085;
     --cinza-borda: #EAECF0;
+    --cinza-direitos: #98A2B3;
     --fonte-principal: "Inter";
     --vermelho: #8E2424;
     --vermelho-opaco: #8E242410;

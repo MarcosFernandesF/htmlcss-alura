@@ -1,0 +1,23 @@
+.depoimentos {
+    text-align: center;
+    margin: 12rem 10vw;
+}
+
+.depoimentos__titulo {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--vermelho);
+}
+
+.depoimentos__texto {
+    font-size: 36px;
+    margin: 1rem 0 2rem 0;
+    line-height: 2.5rem;
+    padding: 0 10rem;
+}
+
+.depoimentos__cargo {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza);
+}
